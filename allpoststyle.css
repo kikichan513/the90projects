@@ -1,0 +1,130 @@
+
+/*I am targeting ul inside of .nav because I would probably 
+want different styling on non-navigational unordered lists.*/
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/*On the list items inside of nav (.nav li) I will set the typography.
+*/
+ .nav li {
+  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+/*Finally, I’ll turn off the underlines and make the text white in the links.
+*/
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+/*I have an active class on the “news” link right now. I can style the active links with this.
+*/
+
+ .nav a.active {
+      color: #444;
+    }
+
+
+/*Then I can target the .nav li inside of the media query. So when on a screen that is at least 600px wide it will use this code:
+*/
+@media screen and (min-width: 600px) {
+	.nav li {
+	width: 120px;
+	border-bottom: none;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.4em;
+	}
+
+	.nav li {
+	display: inline-block;
+	margin-right: -4px;
+	}
+
+}
+
+#slideshow { 
+    position: relative; 
+    width: 100%; 
+}
+
+#slideshow > div { 
+    top: 0px; 
+    left: 0px; 
+}
+
+#slideshow > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+body { 
+  background: url(lighthand.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+#wrapper {
+
+  /*text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  justify-content: center;*/
+
+}
+
+#allpost {
+  /*position: relative;
+  margin: 0 auto; 
+  width: 80%;
+  border: 1px;
+  padding: 10px;*/
+  width:100%;
+/*  position: absolute;
+  display: center;*/
+  bottom: 10px;
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 30px 100px 30px 100px;
+
+  /*  unsure if padding does anything
+  */
+}
+
+.row {
+
+
+}
+.row img{
+    background-color: #fff;
+    padding: 7px;
+    position: relative;
+    float: left;
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin: 40px;
+}

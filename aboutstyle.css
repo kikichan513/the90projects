@@ -1,0 +1,198 @@
+
+/*I am targeting ul inside of .nav because I would probably 
+want different styling on non-navigational unordered lists.*/
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/*On the list items inside of nav (.nav li) I will set the typography.
+*/
+ .nav li {
+  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+/*Finally, I’ll turn off the underlines and make the text white in the links.
+*/
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+/*I have an active class on the “news” link right now. I can style the active links with this.
+*/
+
+ .nav a.active {
+/**/      color: #444;
+    }
+
+
+/*Then I can target the .nav li inside of the media query. So when on a screen that is at least 600px wide it will use this code:
+*/
+@media screen and (min-width: 600px) {
+    .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    }
+
+    .nav li {
+    display: inline-block;
+    margin-right: -4px;
+    }
+
+}
+/*NOW THIS IS THE PART---------------------------------------------*/
+ 
+ 
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+html,body {
+      padding:0;
+      margin:0;
+      background:#8cd0ce;
+  }
+
+  #wrapper {
+      position:absolute;
+      height:100%;
+      width:100%;
+  }
+
+  .panels {
+/*      position:relative;
+*/      height:100%;
+      min-height:100%;
+      width:100%;
+      z-index:1000;
+  }
+
+  #a{
+      background:#92d8d7;
+      background: url(lighthand.png) no-repeat center center fixed; 
+      background-size: 1300px 1300px;
+      position:fixed;
+      color:red;
+      top:0;
+      z-index:-99;
+  }
+
+  #b{
+     margin-top:50%;
+     background: url(about/selfimage.png) no-repeat center center fixed; 
+     background-size: 100%;
+  }
+
+  @media (max-width: 1200px) { 
+     .fly-in-text { font-size: 8px; }
+  }
+  
+
+  .info1 {
+    margin-top:20%;
+    margin-left:10%;
+    margin-right:auto;
+    font-size: 3em;
+    color: #ffffff;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+    padding-right: 20px;
+    padding-left:20px;
+    padding-bottom:30px;
+
+  }
+
+    .info2 {
+    margin-top:20%;
+    margin-left:10%;
+    margin-right:auto;
+    font-size: 2.5em;
+    color: #ffffff;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+    padding-right: 20px;
+    padding-top:30px;
+    padding-left:20px;
+    padding-bottom:30px;
+
+  }
+
+  @media (max-width: 1000px) { 
+     .info2 { font-size: 1.8em; color:red;}
+  }
+  
+    @media (max-width: 600px) and (min-width: 999px) { 
+     .info2 { font-size: 1em; color:blue;}
+  }
+
+  #c{
+     background-color: pink;
+  }
+
+.title {
+    margin: 1em 0 0.5em 0;
+      color: #fff;
+      font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+      font-weight: 250;
+      font-size: 9em;
+      color: #000;
+      opacity: 1;
+      text-transform: uppercase;
+      text-shadow: 0 2px white, 0 3px #777;
+}
+
+  @media (max-width: 1000px) { 
+     .title { font-size: 6em; }
+  }
+
+  #d{
+     background: url(about/berlin.png) no-repeat center center fixed; 
+     background-size: 100%;
+/*     background:#d9c5eb;
+*/  }
+
+
+  .fly-in-text {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.fly-in-text li {
+    display: inline-block;
+    margin-right: 50px;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+    font-weight: 300;
+    font-size: 6em;
+    color: #000;
+    opacity: 1;
+    transition: all 2.5s ease;
+
+}
+.fly-in-text li:last-child {
+    margin-right: 0;
+}
+.fly-in-text.hid li {
+    opacity: 0;
+}
+.fly-in-text.hid li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.fly-in-text.hid li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.fly-in-text.hid li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+.fly-in-text.hid li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+.fly-in-text.hid li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
