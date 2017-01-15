@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Post</title>
+	<link rel="stylesheet" type="text/css" href="allpoststyle.css">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" sruc="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+			 $(document).ready(function(){
+				 $("#slideshow > div:gt(0)").hide();
+					setInterval(function() { 
+					  $('#slideshow > div:first')
+					    .fadeOut(1)
+					    .next()
+					    .fadeIn(1)
+					    .end()
+					    .appendTo('#slideshow');
+					},  1000);
+			});
+		</script>
+
+</head>
+
+<body>
+
+	<div class = "nav">
+
+		<ul>
+	        <li class="home"><a href="index.html">homefeed</a></li>
+	        <li class="tutorials"><a href="allpost.html">all post</a></li>
+	        <li class="news"><a href="about.html">about</a></li>
+	        <li class="contact"><a href="contact.html">contact</a></li>
+	    </ul>
+	</div>
+
+	<div id = "slideshow">
+		 <div>
+		 	<img src = "allpost/allpost.png">
+		 </div>
+		 <div id = "inverse">
+		 	<img src = "allpost/allpostinverse.png">
+		 </div> 
+	 </div>
+	
+	<div id="wrapper">
+		<div id = "allpost">
+
+			<div class="row">
+				  <div class ="col-md-4">
+				  		<img src="Daily Doodles/Today1.png" alt="Today 1">
+				  </div>
+				
+				  <div class="col-md-4">
+				  		<img src="Daily Doodles/Today2.png" alt="Today 2">
+				  </div>
+
+				  <div class="col-md-4">
+				  		<img = src="Daily Doodles/Today3.png" alt="Today 3">
+				  </div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

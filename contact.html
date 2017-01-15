@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	 <meta charset="UTF-8" />
+	   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	   <link rel="stylesheet" type="text/css" href="contactstyle.css">
+	   	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	   	<script src = "contact/map.js"></script>
+
+	   	<script type="text/javascript">
+			$(window).scroll(function ()
+			{
+			  var yPos=-($(window).scrollTop() / 6);
+			  if($(window).scrollTop()>100)
+			  {
+			    document.getElementById("div1_wrapper").style.backgroundPosition="100% "+yPos+"px";
+			  }
+			  if($(window).scrollTop()<100)
+			  {
+			    document.getElementById("div1_wrapper").style.backgroundPosition="100% 100%";
+			  }
+			});
+		</script>
+
+
+</head>
+<body onload = "init()"> 
+	 <div class = "nav">
+
+            <ul>
+                <li class="home"><a href="index.html">homefeed</a></li>
+                <li class="tutorials"><a href="allpost.html">all post</a></li>
+<!--                 <li class="about"><a href="submit.html">submit</a></li>
+ -->                <li class="news"><a href="about.html">about</a></li>
+                <li class="contact"><a href="contact.html">contact</a></li>
+            </ul>
+    </div>
+
+
+	<div id="wrapper">
+				<div id="div1_wrapper">
+					<div id="div1">
+						<p> Get in touch
+						</p>
+					</div>
+				</div>
+
+				<div id="div2_wrapper">
+						<div id="div2">
+							<p>Send me a message </p>
+ 	<a href="http://www.123contactform.com/form-2380878/Contact-Lead-Form" class="blueLink13"> <b><font size ="5" > Click here to send me a message </font></b></a>
+
+									<div class = "maps-bitch">
+					     			<div id = "map-canvas"></div>
+					     			</div>
+							
+
+						 </div>
+				</div>
+	</div>
+
+<!--     <div class = "container">
+
+
+	     	<div class = "row">
+	     		<div class = "col-md-12 text-center">
+	     			<h2 class = "heading"> 
+	     				Get In Touch </h2>
+	     				<br>
+	     			<h2 class = "sub-heading">
+	     				Send me a message! </h2>
+	     		</div>
+	     	</div>
+
+	     	<div class = "row">
+	     		<div class = "col-md-12 text-center">
+	     			<div class= "art"><img src="contactimg.png" alt="Contact Image"></div>
+
+	     		</div>
+	     	</div>
+
+	     	<br>
+	     	<br>
+
+	     	<div class = "row">
+		     		<div class = "col-lg-2"> </div>
+		     		<div class = "col-lg-8">
+			     			<div id = "map-canvas">
+			     		
+			     			</div>
+					 	    </div>
+				 	<div class = "col-lg-2"> </div>
+
+				 </div>
+
+     </div> -->
+
+  </body>
+
+
+</body>
+</html>
