@@ -1,4 +1,4 @@
-
+ 
 /*I am targeting ul inside of .nav because I would probably 
 want different styling on non-navigational unordered lists.*/
 .nav ul {
@@ -74,7 +74,7 @@ want different styling on non-navigational unordered lists.*/
 }
 
 body { 
-  background: url(lighthand.png) no-repeat center center fixed; 
+  background: url(Lighthand.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
