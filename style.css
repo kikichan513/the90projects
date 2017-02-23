@@ -71,7 +71,6 @@ want different styling on non-navigational unordered lists.*/
 #slideshow { 
     position: relative; 
     width: 100%; 
-/*    height: 500px; */
 }
 
 /*#slideshow > div { 
@@ -117,10 +116,10 @@ padding:10px;
 
 .post {
 margin: 0 auto; 
-width: 75%;
-border: 1px;
-padding: 10px;
-background-color:#dddddd;
+width: 55%;
+/*border: 1px;
+*//*padding: 10px;
+*/background-color:#dddddd;
 display: block;
 
 }
@@ -137,4 +136,15 @@ display: block;
   background-size:     cover;
 }
 
+@media screen and (max-width: 700px) {
+  .art img {
+  width:  250px;
+  height: 250px;
+  }
+
+@media screen and (max-width: 450px) {
+  .art img {
+  width:  150px;
+  height: 150px;
+  }
 

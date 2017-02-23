@@ -131,13 +131,6 @@ html,body {
 
   }
 
-  @media (max-width: 1000px) { 
-     .info2 { font-size: 1.8em; color:red;}
-  }
-  
-    @media (max-width: 600px) and (min-width: 999px) { 
-     .info2 { font-size: 1em; color:blue;}
-  }
 
   #c{
      background-color: pink;
@@ -159,11 +152,6 @@ html,body {
      .title { font-size: 6em; }
   }
 
-  #d{
-     background: url(about/berlin.png) no-repeat center center fixed; 
-     background-size: 100%;
-/*     background:#d9c5eb;
-*/  }
 
 
   .fly-in-text {
