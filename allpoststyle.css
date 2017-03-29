@@ -11,7 +11,7 @@ want different styling on non-navigational unordered lists.*/
 /*On the list items inside of nav (.nav li) I will set the typography.
 */
  .nav li {
-  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -82,34 +82,15 @@ body {
 
 }
 
-#wrapper {
-
-  /*text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 200px;
-  justify-content: center;*/
-
-}
 
 #allpost {
-  /*position: relative;
-  margin: 0 auto; 
-  width: 80%;
-  border: 1px;
-  padding: 10px;*/
   width:100%;
-/*  position: absolute;
-  display: center;*/
   bottom: 10px;
   position: relative;
   display: block;
   text-align: center;
   padding: 30px 100px 30px 100px;
 
-  /*  unsure if padding does anything
-  */
 }
 
 .row {

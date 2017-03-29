@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 
 body { 
   background: url(Lighthand.png) no-repeat center center fixed; 
@@ -19,7 +21,7 @@ want different styling on non-navigational unordered lists.*/
 /*On the list items inside of nav (.nav li) I will set the typography.
 */
  .nav li {
-  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -86,25 +88,23 @@ want different styling on non-navigational unordered lists.*/
   background-size:110%;
 }
 
-
-
 .intro {
 	background: #4d4d4d;
 	color:white;
 	padding:10px;
-	font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+  font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
 #title {
-font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+  font-family: 'Montserrat', sans-serif;
 font-weight: bold;
 text-align: center;
 padding:10px;
 }
 
 #date {
-font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+  font-family: 'Montserrat', sans-serif;
 text-align: center;
 padding:10px;
 
@@ -117,24 +117,26 @@ padding:10px;
 .post {
 margin: 0 auto; 
 width: 55%;
-/*border: 1px;
-*//*padding: 10px;
-*/background-color:#dddddd;
-display: block;
+/*background-color:#ddc0c9; 
+*/display: block;
 
 }
 
 .art img{
-  display: block;
-  margin: 0 auto;
-  padding: 7px;
-  position: relative;
-  width:  350px;
-  height: 350px;
-  background-position: 50% 50%;
-  background-repeat:   no-repeat;
-  background-size:     cover;
+    width:  400px;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 7px;
 }
+
+@media screen and (max-width: 1282px) {
+  .art img {
+  width:  450px;
+  height: 450px;
+  }
 
 @media screen and (max-width: 700px) {
   .art img {

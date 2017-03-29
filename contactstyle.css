@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 /*I am targeting ul inside of .nav because I would probably 
 want different styling on non-navigational unordered lists.*/
@@ -11,7 +12,7 @@ want different styling on non-navigational unordered lists.*/
 /*On the list items inside of nav (.nav li) I will set the typography.
 */
  .nav li {
-  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -60,7 +61,7 @@ body
 {
   width: 100%;
   text-align:center;
-  font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+  font-family: 'Montserrat', sans-serif;
   color:white;
   background-color: #42454b;
 }
@@ -84,7 +85,7 @@ body
 }
 #wrapper div
 {
-  height:400px;
+  height:240px;
 }
 #wrapper div p
 {
@@ -96,7 +97,7 @@ body
 }
 #div1_wrapper
 {
-  background:url("contact/contactimg1.png") no-repeat;
+  background:url("contact/contactimg3.png") no-repeat;
   background-attachment:fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -104,12 +105,13 @@ body
 }
 #div2_wrapper
 {
-  background:url("contact/contactimg2.png") no-repeat;
+  background:url("contact/contactimg3.png") no-repeat;
   background-attachment:fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height:100px;
   width:100%;
+  background-color: #42454b;
 }
 
 .maps-bitch {
